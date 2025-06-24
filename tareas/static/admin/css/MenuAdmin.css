@@ -33,7 +33,7 @@ body::before {
 
 /* ------------------ SIDEBAR ------------------ */
 .sidebar {
-    width: 260px;
+    width: 300px;
     height: 100vh;
     background-color: var(--sidebar-bg);
     color: white;
@@ -126,8 +126,8 @@ body::before {
 
 /* ------------------ CONTENIDO PRINCIPAL ------------------ */
 .main-content {
-    margin-left: 260px;
-    width: calc(100% - 260px);
+    margin-left: 300px;
+    width: calc(100% - 300px);
     height: 100vh;
     padding: 30px 40px;
     overflow-y: auto;

@@ -1,6 +1,10 @@
+:root {
+  --blue: var(--cajero-blue);
+  --gray: var(--cajero-gray);
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f5f6;
   margin: 0;
   padding: 40px;
 }
@@ -18,21 +22,21 @@ body {
   text-align: center;
   font-size: 26px;
   font-weight: 700;
-  color: #111827;
+  color: var(--blue);
   margin-bottom: 30px;
-  border-bottom: 2px solid #14b87c;
+  border-bottom: 2px solid var(--blue);
   padding-bottom: 10px;
 }
 
 .item-perfil {
   margin-bottom: 15px;
   font-size: 17px;
-  color: #111827;
+  color: #e0e0e0;
 }
 
 .item-perfil strong {
   font-weight: 600;
-  color: #0e8a5f;
+  color: var(--blue);
 }
 
 /* ✅ Agrupación de botones */
@@ -45,7 +49,7 @@ body {
 
 /* Botón volver */
 .btn-volver {
-  background-color: #14b87c;
+  background-color: var(--blue);
   color: white;
   text-decoration: none;
   padding: 10px 20px;
@@ -58,14 +62,14 @@ body {
 }
 
 .btn-volver:hover {
-  background-color: #0e8a5f;
+  background-color: #1e3a8a;
   box-shadow: 0 6px 12px rgba(14, 138, 95, 0.5);
 }
 
 /* Botones de acción (Factura, Plan, Facturas Pagadas) */
 .btn-factura {
   text-decoration: none;
-  background-color: #1abc9c;
+  background-color: var(--gray);
   color: white;
   padding: 10px 20px;
   border-radius: 10px;
@@ -80,7 +84,7 @@ body {
 }
 
 .btn-factura:hover {
-  background-color: #17a589;
+  background-color: var(--blue);
   box-shadow: 0 6px 12px rgba(23, 165, 137, 0.4);
 }
 
@@ -105,7 +109,7 @@ body {
 }
 
 .btn-guardar {
-  background-color: #6a0dad;
+  background-color: var(--blue);
   color: white;
   padding: 10px 16px;
   border: none;
@@ -114,5 +118,5 @@ body {
 }
 
 .btn-guardar:hover {
-  background-color: #5a0ca3;
+  background-color: #1e3a8a;
 }
