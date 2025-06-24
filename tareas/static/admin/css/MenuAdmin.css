@@ -33,7 +33,7 @@ body::before {
 
 /* ------------------ SIDEBAR ------------------ */
 .sidebar {
-    width: 260px;
+    width: 300px;
     height: 100vh;
     background-color: var(--sidebar-bg);
     color: white;
@@ -71,20 +71,21 @@ body::before {
 }
 
 .menu li {
-    padding: 10px 20px;
+    --item-color: var(--accent-color);
+    padding: 15px 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    font-size: 0.9rem;
-    line-height: 1.2;
+    font-size: 1.05rem;
+    line-height: 1.4;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .menu li i {
-    margin-right: 12px;
-    font-size: 1.1rem;
-    color: var(--accent-color);
+    margin-right: 14px;
+    font-size: 1.3rem;
+    color: var(--item-color);
 }
 
 .menu li::before {
@@ -94,7 +95,7 @@ body::before {
     top: 0;
     height: 100%;
     width: 5px;
-    background-color: var(--accent-color);
+    background-color: var(--item-color);
     transform: scaleY(0);
     transition: transform 0.3s ease;
     transform-origin: top;
@@ -105,14 +106,28 @@ body::before {
 }
 
 .menu li:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--item-color);
     padding-left: 25px;
 }
 
+/* Colores personalizados por sección */
+.menu li.personal { --item-color: #8e24aa; }
+.menu li.servicios { --item-color: #3949ab; }
+.menu li.especialidades { --item-color: #00897b; }
+.menu li.habitaciones { --item-color: #ff8f00; }
+.menu li.pagos { --item-color: #c62828; }
+.menu li.pacientes { --item-color: #6d4c41; }
+.menu li.consultas { --item-color: #0277bd; }
+.menu li.financiera { --item-color: #2e7d32; }
+.menu li.reportes { --item-color: #ad1457; }
+.menu li.accesos { --item-color: #5d4037; }
+.menu li.configuraciones { --item-color: #455a64; }
+.menu li.cerrar { --item-color: #d32f2f; }
+
 /* ------------------ CONTENIDO PRINCIPAL ------------------ */
 .main-content {
-    margin-left: 260px;
-    width: calc(100% - 260px);
+    margin-left: 300px;
+    width: calc(100% - 300px);
     height: 100vh;
     padding: 30px 40px;
     overflow-y: auto;
