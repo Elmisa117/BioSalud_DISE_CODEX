@@ -16,12 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
             const opcion = item.textContent.trim();
+            const url = item.dataset.url;
 
             if (opcion === "Cerrar sesión") {
                 const confirmar = confirm("¿Estás seguro de que deseas cerrar sesión?");
                 if (confirmar) {
                     window.location.href = "/cerrar/";
                 }
+                return;
+            }
+
+            if (url) {
+                window.location.href = url;
                 return;
             }
 
@@ -39,8 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = "/admin/listar_personal/";
             } else if (opcion === "Servicios Médicos") {
                 window.location.href = "/admin/servicios/";
-            } else if (opcion === "Gestión de Especialidades") {
-                window.location.href = "/admin/especialidades/";
             } else if (opcion === "Gestión de Habitaciones") {
                 window.location.href = "/admin/habitaciones/";
             } else if ( opcion === "Métodos de Pago") {
