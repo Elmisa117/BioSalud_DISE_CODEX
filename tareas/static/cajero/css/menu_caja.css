@@ -1,7 +1,11 @@
+:root {
+  --blue: var(--cajero-blue);
+  --gray: var(--cajero-gray);
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f5f6;
   display: flex;
 }
 
@@ -10,7 +14,7 @@ body {
   width: 260px;
   height: 100vh;
   padding: 30px 20px;
-  background-color: #111827; /* Fondo oscuro */
+  background-color: var(--blue);
   display: flex;
   flex-direction: column;
   color: white;
@@ -45,20 +49,21 @@ body {
   color: #fff;
   border-radius: 30px;
   text-decoration: none;
-  background-color: #1f2937;
-  box-shadow: 0 0 10px #c084fc, 0 0 20px #c084fc, 0 0 30px #c084fc;
-  border: 2px solid #c084fc;
-  transition: 0.4s ease;
+  background-color: var(--gray);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border: 2px solid var(--blue);
+  transition: 0.3s ease;
 }
 
 .menu a:hover {
-  background-color: #c084fc;
-  color: #000;
-  box-shadow: 0 0 20px #d8b4fe, 0 0 40px #d8b4fe, 0 0 60px #d8b4fe;
+  background-color: var(--blue);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
 }
 
 /* 📄 Contenido derecho */
 .main-content {
   padding: 60px;
   flex-grow: 1;
+  color: #f0f0f0;
 }

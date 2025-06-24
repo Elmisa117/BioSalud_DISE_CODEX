@@ -16,12 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
             const opcion = item.textContent.trim();
+            const url = item.dataset.url;
 
             if (opcion === "Cerrar sesión") {
                 const confirmar = confirm("¿Estás seguro de que deseas cerrar sesión?");
                 if (confirmar) {
                     window.location.href = "/cerrar/";
                 }
+                return;
+            }
+
+            if (url) {
+                window.location.href = url;
                 return;
             }
 
