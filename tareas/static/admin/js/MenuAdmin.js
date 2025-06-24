@@ -39,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = "/admin/listar_personal/";
             } else if (opcion === "Servicios Médicos") {
                 window.location.href = "/admin/servicios/";
+            } else if (opcion === "Gestión de Especialidades") {
+                window.location.href = "/admin/especialidades/";
             } else if (opcion === "Gestión de Habitaciones") {
                 window.location.href = "/admin/habitaciones/";
             } else if ( opcion === "Métodos de Pago") {
