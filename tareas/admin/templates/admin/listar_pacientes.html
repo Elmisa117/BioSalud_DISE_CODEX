@@ -14,7 +14,7 @@
         <a href="{% url 'registrar_paciente' %}" class="btn-nuevo">+ Registrar nuevo</a>
         <a href="{% url 'exportar_pacientes' %}" class="btn-nuevo">Exportar CSV</a>
     </div>
-    <form method="get" class="form-grid" style="margin-bottom:20px;">
+    <form method="get" class="form-grid filter-form">
         <div class="form-field"><input type="text" name="q" placeholder="Buscar" value="{{ q }}"></div>
         <div class="form-field">
             <select name="sexo">

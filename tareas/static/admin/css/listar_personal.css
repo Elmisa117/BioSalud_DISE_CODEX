@@ -92,3 +92,8 @@
     color: #a30000;
     border: 1px solid #ff4d4d;
 }
+
+/* Formulario de filtros en listados */
+.filter-form {
+    margin-bottom: 20px;
+}
