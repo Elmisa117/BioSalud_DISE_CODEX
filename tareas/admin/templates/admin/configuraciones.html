@@ -10,7 +10,7 @@
 {% block contenido %}
 <div class="listado-card">
     <h2>Configuraciones Generales</h2>
-    <form method="post" class="form-grid" style="margin-bottom:20px;">
+    <form method="post" class="form-grid filter-form">
         {% csrf_token %}
         <div class="form-field">{{ form.nombre_clinica.label_tag }}{{ form.nombre_clinica }}</div>
         <div class="form-field">{{ form.logo_url.label_tag }}{{ form.logo_url }}</div>
